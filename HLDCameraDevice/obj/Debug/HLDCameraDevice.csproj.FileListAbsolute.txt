@@ -1,0 +1,349 @@
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\DirectShowLib-2005.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\log4net.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\Basler\Basler.Pylon.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\Basler\Basler.Pylon.xml
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\OpenCvSharp.Blob.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\OpenCvSharp.Blob.xml
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\OpenCvSharp.CPlusPlus.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\OpenCvSharp.CPlusPlus.xml
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\OpenCvSharp.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\OpenCvSharp.Extensions.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\OpenCvSharp.Extensions.xml
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\OpenCvSharp.UserInterface.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\OpenCvSharp.UserInterface.xml
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\OpenCvSharp.xml
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\OpenCvSharpExtern.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\opencv_calib3d2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\opencv_calib3d2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\opencv_contrib2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\opencv_contrib2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\opencv_core2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\opencv_core2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\opencv_features2d2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\opencv_features2d2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\opencv_ffmpeg2410_64.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\opencv_flann2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\opencv_flann2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\opencv_gpu2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\opencv_gpu2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\opencv_highgui2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\opencv_highgui2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\opencv_imgproc2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\opencv_imgproc2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\opencv_legacy2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\opencv_legacy2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\opencv_ml2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\opencv_ml2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\opencv_nonfree2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\opencv_nonfree2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\opencv_objdetect2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\opencv_objdetect2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\opencv_ocl2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\opencv_ocl2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\opencv_photo2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\opencv_photo2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\opencv_stitching2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\opencv_stitching2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\opencv_superres2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\opencv_superres2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\opencv_video2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\opencv_video2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\opencv_videostab2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\opencv_videostab2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\Basler\Basler.Pylon.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\Basler\Basler.Pylon.xml
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\LICENSE.txt
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\OpenCvSharp.Blob.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\OpenCvSharp.Blob.xml
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\OpenCvSharp.CPlusPlus.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\OpenCvSharp.CPlusPlus.xml
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\OpenCvSharp.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\OpenCvSharp.Extensions.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\OpenCvSharp.Extensions.xml
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\OpenCvSharp.UserInterface.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\OpenCvSharp.UserInterface.xml
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\OpenCvSharp.xml
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\OpenCvSharpExtern.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\opencv_calib3d2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\opencv_calib3d2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\opencv_contrib2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\opencv_contrib2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\opencv_core2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\opencv_core2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\opencv_features2d2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\opencv_features2d2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\opencv_ffmpeg2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\opencv_flann2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\opencv_flann2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\opencv_gpu2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\opencv_gpu2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\opencv_highgui2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\opencv_highgui2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\opencv_imgproc2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\opencv_imgproc2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\opencv_legacy2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\opencv_legacy2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\opencv_ml2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\opencv_ml2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\opencv_nonfree2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\opencv_nonfree2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\opencv_objdetect2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\opencv_objdetect2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\opencv_ocl2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\opencv_ocl2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\opencv_photo2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\opencv_photo2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\opencv_stitching2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\opencv_stitching2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\opencv_superres2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\opencv_superres2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\opencv_video2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\opencv_video2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\opencv_videostab2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\opencv_videostab2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\XDMessaging.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\OpenCvSharp.Blob.dll.config
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\OpenCvSharp.CPlusPlus.dll.config
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\OpenCvSharp.dll.config
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x64\OpenCVSharp\README.md
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\OpenCvSharp.Blob.dll.config
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\OpenCvSharp.CPlusPlus.dll.config
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\OpenCvSharp.dll.config
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\Dll\x86\OpenCVSharp\README.md
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\HLDCameraDevice.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\bin\Debug\HLDCameraDevice.pdb
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\Basler\Basler.Pylon.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\Basler\Basler.Pylon.xml
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\OpenCvSharp.Blob.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\OpenCvSharp.Blob.xml
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\OpenCvSharp.CPlusPlus.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\OpenCvSharp.CPlusPlus.xml
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\OpenCvSharp.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\OpenCvSharp.Extensions.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\OpenCvSharp.Extensions.xml
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\OpenCvSharp.UserInterface.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\OpenCvSharp.UserInterface.xml
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\OpenCvSharp.xml
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\OpenCvSharpExtern.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_calib3d2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_calib3d2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_contrib2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_contrib2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_core2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_core2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_features2d2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_features2d2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_ffmpeg2410_64.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_flann2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_flann2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_gpu2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_gpu2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_highgui2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_highgui2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_imgproc2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_imgproc2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_legacy2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_legacy2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_ml2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_ml2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_nonfree2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_nonfree2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_objdetect2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_objdetect2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_ocl2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_ocl2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_photo2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_photo2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_stitching2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_stitching2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_superres2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_superres2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_video2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_video2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_videostab2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_videostab2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\Basler\Basler.Pylon.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\Basler\Basler.Pylon.xml
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\LICENSE.txt
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\OpenCvSharp.Blob.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\OpenCvSharp.Blob.xml
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\OpenCvSharp.CPlusPlus.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\OpenCvSharp.CPlusPlus.xml
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\OpenCvSharp.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\OpenCvSharp.Extensions.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\OpenCvSharp.Extensions.xml
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\OpenCvSharp.UserInterface.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\OpenCvSharp.UserInterface.xml
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\OpenCvSharp.xml
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\OpenCvSharpExtern.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_calib3d2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_calib3d2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_contrib2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_contrib2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_core2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_core2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_features2d2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_features2d2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_ffmpeg2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_flann2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_flann2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_gpu2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_gpu2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_highgui2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_highgui2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_imgproc2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_imgproc2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_legacy2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_legacy2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_ml2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_ml2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_nonfree2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_nonfree2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_objdetect2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_objdetect2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_ocl2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_ocl2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_photo2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_photo2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_stitching2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_stitching2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_superres2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_superres2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_video2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_video2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_videostab2410.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_videostab2410d.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\OpenCvSharp.Blob.dll.config
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\OpenCvSharp.CPlusPlus.dll.config
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\OpenCvSharp.dll.config
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\README.md
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\OpenCvSharp.Blob.dll.config
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\OpenCvSharp.CPlusPlus.dll.config
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\OpenCvSharp.dll.config
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\README.md
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\HLDCameraDevice.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\HLDCameraDevice.pdb
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\obj\Debug\HLDCameraDevice.csprojResolveAssemblyReference.cache
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\obj\Debug\HLDCameraDevice.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCameraDevice\obj\Debug\HLDCameraDevice.pdb
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\DirectShowLib-2005.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\log4net.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\LICENSE.txt
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\XDMessaging.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\DirectShowLib-2005.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\log4net.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\Basler\Basler.Pylon.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\Basler\Basler.Pylon.xml
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\LICENSE.txt
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\OpenCvSharp.Blob.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\OpenCvSharp.Blob.xml
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\OpenCvSharp.CPlusPlus.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\OpenCvSharp.CPlusPlus.xml
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\OpenCvSharp.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\OpenCvSharp.Extensions.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\OpenCvSharp.Extensions.xml
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\OpenCvSharp.UserInterface.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\OpenCvSharp.UserInterface.xml
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\OpenCvSharp.xml
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\OpenCvSharpExtern.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_calib3d2410.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_calib3d2410d.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_contrib2410.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_contrib2410d.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_core2410.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_core2410d.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_features2d2410.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_features2d2410d.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_ffmpeg2410_64.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_flann2410.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_flann2410d.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_gpu2410.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_gpu2410d.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_highgui2410.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_highgui2410d.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_imgproc2410.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_imgproc2410d.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_legacy2410.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_legacy2410d.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_ml2410.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_ml2410d.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_nonfree2410.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_nonfree2410d.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_objdetect2410.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_objdetect2410d.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_ocl2410.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_ocl2410d.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_photo2410.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_photo2410d.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_stitching2410.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_stitching2410d.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_superres2410.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_superres2410d.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_video2410.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_video2410d.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_videostab2410.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\opencv_videostab2410d.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\Basler\Basler.Pylon.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\Basler\Basler.Pylon.xml
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\LICENSE.txt
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\OpenCvSharp.Blob.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\OpenCvSharp.Blob.xml
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\OpenCvSharp.CPlusPlus.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\OpenCvSharp.CPlusPlus.xml
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\OpenCvSharp.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\OpenCvSharp.Extensions.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\OpenCvSharp.Extensions.xml
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\OpenCvSharp.UserInterface.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\OpenCvSharp.UserInterface.xml
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\OpenCvSharp.xml
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\OpenCvSharpExtern.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_calib3d2410.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_calib3d2410d.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_contrib2410.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_contrib2410d.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_core2410.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_core2410d.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_features2d2410.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_features2d2410d.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_ffmpeg2410.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_flann2410.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_flann2410d.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_gpu2410.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_gpu2410d.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_highgui2410.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_highgui2410d.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_imgproc2410.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_imgproc2410d.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_legacy2410.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_legacy2410d.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_ml2410.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_ml2410d.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_nonfree2410.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_nonfree2410d.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_objdetect2410.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_objdetect2410d.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_ocl2410.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_ocl2410d.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_photo2410.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_photo2410d.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_stitching2410.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_stitching2410d.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_superres2410.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_superres2410d.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_video2410.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_video2410d.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_videostab2410.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\opencv_videostab2410d.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\XDMessaging.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\OpenCvSharp.Blob.dll.config
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\OpenCvSharp.CPlusPlus.dll.config
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\OpenCvSharp.dll.config
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\README.md
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\OpenCvSharp.Blob.dll.config
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\OpenCvSharp.CPlusPlus.dll.config
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\OpenCvSharp.dll.config
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\Dll\x86\OpenCVSharp\README.md
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\HLDCameraDevice.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\HLDCameraDevice.pdb
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLDCameraDevice\obj\Debug\HLDCameraDevice.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLDCameraDevice\obj\Debug\HLDCameraDevice.pdb

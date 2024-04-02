@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F23FCF9F-BD7B-4737-B75D-D550170C9965}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HLDInterface</RootNamespace>
+    <AssemblyName>HLDInterface</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\HLD_Vision_Total\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="OpenCvSharp">
+      <HintPath>..\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\OpenCvSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenCvSharp.CPlusPlus">
+      <HintPath>..\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\OpenCvSharp.CPlusPlus.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="XDMessaging">
+      <HintPath>..\HLD_Vision_Total\Output\Dll\XDMessaging.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IIO.cs" />
+    <Compile Include="MXCom\IO_MXComponent.cs" />
+    <Compile Include="MXCom\MXComponent.cs" />
+    <Compile Include="MXCom\Robot_MXCom_AbsAddress.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Robot\Com\MsgSocket.cs" />
+    <Compile Include="Robot\Com\NachiSocket.cs" />
+    <Compile Include="Robot\Com\RobostarSocket.cs" />
+    <Compile Include="Robot\IO_Ethernet_Client.cs" />
+    <Compile Include="Robot\IO_Robot_Msg.cs" />
+    <Compile Include="Robot\IRobotDevice.cs" />
+    <Compile Include="Robot\Robot_ABB.cs" />
+    <Compile Include="Robot\Robot_Ethernet_Client.cs" />
+    <Compile Include="Robot\Robot_Msg.cs" />
+    <Compile Include="Robot\Robot_Nachi.cs" />
+    <Compile Include="Robot\Robot_Robostar_Ethernet.cs" />
+    <Compile Include="Robot\Robot_Robostar_Serial.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HLDCameraDevice\HLDCameraDevice.csproj">
+      <Project>{a800a53d-977f-4f0f-b387-6c297aab831f}</Project>
+      <Name>HLDCameraDevice</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HLDCommon\HLDCommon.csproj">
+      <Project>{40e4c696-22b6-450c-86c1-720abb48d1af}</Project>
+      <Name>HLDCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dll\x64\OpenCVSharp\LICENSE.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\OpenCvSharp.Blob.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\OpenCvSharp.Blob.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\OpenCvSharp.CPlusPlus.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\OpenCvSharp.CPlusPlus.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\OpenCvSharp.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\OpenCvSharp.Extensions.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\OpenCvSharp.Extensions.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\OpenCvSharp.UserInterface.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\OpenCvSharp.UserInterface.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\OpenCvSharp.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\OpenCvSharpExtern.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_calib3d2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_calib3d2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_contrib2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_contrib2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_core2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_core2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_features2d2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_features2d2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_ffmpeg2410_64.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_flann2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_flann2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_gpu2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_gpu2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_highgui2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_highgui2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_imgproc2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_imgproc2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_legacy2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_legacy2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_ml2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_ml2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_nonfree2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_nonfree2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_objdetect2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_objdetect2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_ocl2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_ocl2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_photo2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_photo2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_stitching2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_stitching2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_superres2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_superres2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_video2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_video2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_videostab2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_videostab2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\LICENSE.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\OpenCvSharp.Blob.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\OpenCvSharp.Blob.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\OpenCvSharp.CPlusPlus.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\OpenCvSharp.CPlusPlus.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\OpenCvSharp.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\OpenCvSharp.Extensions.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\OpenCvSharp.Extensions.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\OpenCvSharp.UserInterface.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\OpenCvSharp.UserInterface.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\OpenCvSharp.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\OpenCvSharpExtern.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_calib3d2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_calib3d2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_contrib2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_contrib2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_core2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_core2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_features2d2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_features2d2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_ffmpeg2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_flann2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_flann2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_gpu2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_gpu2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_highgui2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_highgui2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_imgproc2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_imgproc2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_legacy2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_legacy2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_ml2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_ml2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_nonfree2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_nonfree2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_objdetect2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_objdetect2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_ocl2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_ocl2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_photo2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_photo2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_stitching2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_stitching2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_superres2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_superres2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_video2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_video2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_videostab2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_videostab2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\XDMessaging.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ActSupportMsgLib">
+      <Guid>{1D04DB40-F956-4DC0-A334-E7FA2E4FEF5A}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="ActUtlTypeLib">
+      <Guid>{D217E54E-4A26-4A76-B0AB-57166B90F9AF}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dll\x64\OpenCVSharp\OpenCvSharp.Blob.dll.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Dll\x64\OpenCVSharp\OpenCvSharp.CPlusPlus.dll.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Dll\x64\OpenCVSharp\OpenCvSharp.dll.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Dll\x64\OpenCVSharp\README.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Dll\x86\OpenCVSharp\OpenCvSharp.Blob.dll.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Dll\x86\OpenCVSharp\OpenCvSharp.CPlusPlus.dll.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Dll\x86\OpenCVSharp\OpenCvSharp.dll.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Dll\x86\OpenCVSharp\README.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

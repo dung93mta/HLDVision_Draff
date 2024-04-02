@@ -1,0 +1,991 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8FC3A86A-83E2-42ED-A2B5-945C6BA53C40}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HLDVision</RootNamespace>
+    <AssemblyName>HLDVision</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\HLD_Vision_Total\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DirectShowLib-2005, Version=2.1.0.0, Culture=neutral, PublicKeyToken=67e7b740cdfc2d3f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\HLD_Vision_Total\Output\Dll\DirectShowLib-2005.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\OpenCvSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenCvSharp.Blob, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\OpenCvSharp.Blob.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenCvSharp.CPlusPlus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\OpenCvSharp.CPlusPlus.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenCvSharp.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\OpenCvSharp.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenCvSharp.UserInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\HLD_Vision_Total\Output\Dll\x64\OpenCVSharp\OpenCvSharp.UserInterface.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tesseract">
+      <HintPath>D:\Non_Documents\MyProject\1. D&amp;L Project\D&amp;L Vis\HLD - LightController_230522\SvMip\tessdata\Tesseract.3.0.2.0\Tesseract.3.0.2.0\lib\net45\Tesseract.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="zxing, Version=0.16.0.0, Culture=neutral, PublicKeyToken=830ae994e36ac27d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.0.0, Culture=neutral, PublicKeyToken=830ae994e36ac27d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\zxing.presentation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\HldToolBlockTree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Core\HldToolBlockTree.Designer.cs">
+      <DependentUpon>HldToolBlockTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\HldToolBlockTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Core\HldToolGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Core\HldToolGroupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\HldToolGroupForm.Designer.cs">
+      <DependentUpon>HldToolGroupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\HldToolList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Core\HldToolListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\HldToolListForm.Designer.cs">
+      <DependentUpon>HldToolListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\HldToolParamsEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\HldToolParamsEditForm.Designer.cs">
+      <DependentUpon>HldToolParamsEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\ImageTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Core\InitToolList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Core\RenameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\RenameForm.Designer.cs">
+      <DependentUpon>RenameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Display\HldDisplayView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Display\HldDisplayView.Designer.cs">
+      <DependentUpon>HldDisplayView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Display\HldDisplayViewInteract.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Display\HldDisplayViewInteract.Designer.cs">
+      <DependentUpon>HldDisplayViewInteract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Display\HldDisplayViewStatusBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Display\HldDisplayViewStatusBar.Designer.cs">
+      <DependentUpon>HldDisplayViewStatusBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Display\HldHistogramBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Display\HldHistogramBox.Designer.cs">
+      <DependentUpon>HldHistogramBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\Base\HldDisplayViewEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\Base\HldDisplayViewEdit.Designer.cs">
+      <DependentUpon>HldDisplayViewEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\Base\HldToolEditBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\Base\HldToolEditBase.Designer.cs">
+      <DependentUpon>HldToolEditBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\Base\HldToolEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit\Base\HldToolEditForm.Designer.cs">
+      <DependentUpon>HldToolEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldAcqisitionEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldAcqisitionEdit.Designer.cs">
+      <DependentUpon>HldAcqisitionEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldBarcodeEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldBarcodeEdit.Designer.cs">
+      <DependentUpon>HldBarcodeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldBlobEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldBlobEdit.Designer.cs">
+      <DependentUpon>HldBlobEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldBlurEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldBlurEdit.Designer.cs">
+      <DependentUpon>HldBlurEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldCaliperEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldCaliperEdit.Designer.cs">
+      <DependentUpon>HldCaliperEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldCameraCalibrationEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldCameraCalibrationEdit.Designer.cs">
+      <DependentUpon>HldCameraCalibrationEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldDataAnalysisEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldDataAnalysisEdit.Designer.cs">
+      <DependentUpon>HldDataAnalysisEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldDataLogEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldDataLogEdit.Designer.cs">
+      <DependentUpon>HldDataLogEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldDistance2PEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldDistance2PEdit.Designer.cs">
+      <DependentUpon>HldDistance2PEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldDistance3PEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldDistance3PEdit.Designer.cs">
+      <DependentUpon>HldDistance3PEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldEdgeEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldEdgeEdit.Designer.cs">
+      <DependentUpon>HldEdgeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldEqualizerEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldEqualizerEdit.Designer.cs">
+      <DependentUpon>HldEqualizerEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldFindLineEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldFindLineEdit.Designer.cs">
+      <DependentUpon>HldFindLineEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldFindParallelLineEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldFindParallelLineEdit.Designer.cs">
+      <DependentUpon>HldFindParallelLineEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldFixtureEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldFixtureEdit.Designer.cs">
+      <DependentUpon>HldFixtureEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldHistogramEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldHistogramEdit.Designer.cs">
+      <DependentUpon>HldHistogramEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldImageCalculateEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldImageCalculateEdit.Designer.cs">
+      <DependentUpon>HldImageCalculateEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldImageConverterEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldImageConverterEdit.Designer.cs">
+      <DependentUpon>HldImageConverterEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldImageSaveEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldImageSaveEdit.Designer.cs">
+      <DependentUpon>HldImageSaveEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldIntersectLineEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldIntersectLineEdit.Designer.cs">
+      <DependentUpon>HldIntersectLineEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldJobEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldJobEdit.Designer.cs">
+      <DependentUpon>HldJobEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldJudgementEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldJudgementEdit.Designer.cs">
+      <DependentUpon>HldJudgementEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldMakeLatticeEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldMakeLatticeEdit.Designer.cs">
+      <DependentUpon>HldMakeLatticeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldMakeLineEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldMakeLineEdit.Designer.cs">
+      <DependentUpon>HldMakeLineEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldMakePointEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldMakePointEdit.Designer.cs">
+      <DependentUpon>HldMakePointEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldMakeRectFromLineEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldMakeRectFromLineEdit.Designer.cs">
+      <DependentUpon>HldMakeRectFromLineEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldMakeRegionsEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldMakeRegionsEdit.Designer.cs">
+      <DependentUpon>HldMakeRegionsEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldMaskingEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldMaskingEdit.Designer.cs">
+      <DependentUpon>HldMaskingEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldMeasureSharpnessEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldMeasureSharpnessEdit.Designer.cs">
+      <DependentUpon>HldMeasureSharpnessEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldMorphologyEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldMorphologyEdit.Designer.cs">
+      <DependentUpon>HldMorphologyEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldReadOCREdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldReadOCREdit.Designer.cs">
+      <DependentUpon>HldReadOCREdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldRegionEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldRegionEdit.Designer.cs">
+      <DependentUpon>HldRegionEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldResultAnalysisEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldResultAnalysisEdit.Designer.cs">
+      <DependentUpon>HldResultAnalysisEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldRotationEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldRotationEdit.Designer.cs">
+      <DependentUpon>HldRotationEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldSharpnessEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldSharpnessEdit.Designer.cs">
+      <DependentUpon>HldSharpnessEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldSubImageEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldSubImageEdit.Designer.cs">
+      <DependentUpon>HldSubImageEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldTemplateMatchEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldTemplateMatchEdit.Designer.cs">
+      <DependentUpon>HldTemplateMatchEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldToolBlockEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldToolBlockEdit.Designer.cs">
+      <DependentUpon>HldToolBlockEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldWarppingEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldWarppingEdit.Designer.cs">
+      <DependentUpon>HldWarppingEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HldWarppingPointEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\HldWarppingPointEdit.Designer.cs">
+      <DependentUpon>HldWarppingPointEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HldCalibrationData.cs" />
+    <Compile Include="HldFunc.cs" />
+    <Compile Include="HldJob.cs" />
+    <Compile Include="HldSerializer.cs" />
+    <Compile Include="Implement\HldNotifyCollection.cs" />
+    <Compile Include="Implement\HldParametersAttributes.cs" />
+    <Compile Include="Instance.cs" />
+    <Compile Include="Object\HldBlobObject.cs" />
+    <Compile Include="Object\HldEllipse.cs" />
+    <Compile Include="Object\HldHistogramObject.cs" />
+    <Compile Include="Object\HldImage.cs" />
+    <Compile Include="Object\HldLine.cs" />
+    <Compile Include="Object\HldLineCaliper.cs" />
+    <Compile Include="Object\HldMask.cs" />
+    <Compile Include="Object\HldPolyLine.cs" />
+    <Compile Include="Object\HldRectangle.cs" />
+    <Compile Include="Object\HldRotationRectangle.cs" />
+    <Compile Include="Object\IDrawObject.cs" />
+    <Compile Include="Object\InteractDrawObject.cs" />
+    <Compile Include="HldToolBase.cs" />
+    <Compile Include="Object\HldPoint.cs" />
+    <Compile Include="OffsetControl.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\HldAcquisition.cs" />
+    <Compile Include="Tools\HldBarcode.cs" />
+    <Compile Include="Tools\HldBlob.cs" />
+    <Compile Include="Tools\HldBlur.cs" />
+    <Compile Include="Tools\HldCaliper.cs" />
+    <Compile Include="Tools\HldCameraCalibration.cs" />
+    <Compile Include="Tools\HldDataAnalysis.cs" />
+    <Compile Include="Tools\HldDataLog.cs" />
+    <Compile Include="Tools\HldDistance2P.cs" />
+    <Compile Include="Tools\HldDistance3P.cs" />
+    <Compile Include="Tools\HldEdge.cs" />
+    <Compile Include="Tools\HldEqualizer.cs" />
+    <Compile Include="Tools\HldFindLine.cs" />
+    <Compile Include="Tools\HldFindParallelLine.cs" />
+    <Compile Include="Tools\HldFixture.cs" />
+    <Compile Include="Tools\HldHistogram.cs" />
+    <Compile Include="Tools\HldImageCalculate.cs" />
+    <Compile Include="Tools\HldImageConverter.cs" />
+    <Compile Include="Tools\HldImageSave.cs" />
+    <Compile Include="Tools\HldIntersectLine.cs" />
+    <Compile Include="Tools\HldJudgement.cs" />
+    <Compile Include="Tools\HldMakeLattice.cs" />
+    <Compile Include="Tools\HldMakeLine.cs" />
+    <Compile Include="Tools\HldMakePoint.cs" />
+    <Compile Include="Tools\HldMakeRectFromLine.cs" />
+    <Compile Include="Tools\HldMakeRegions.cs" />
+    <Compile Include="Tools\HldMasking.cs" />
+    <Compile Include="Tools\HldMeasureSharpness.cs" />
+    <Compile Include="Tools\HldMorphology.cs" />
+    <Compile Include="Tools\HldReadOCR.cs" />
+    <Compile Include="Tools\HldRegion.cs" />
+    <Compile Include="Tools\HldResultAnalysis.cs" />
+    <Compile Include="Tools\HldRotation.cs" />
+    <Compile Include="Tools\HldSharpness.cs" />
+    <Compile Include="Tools\HldSubImage.cs" />
+    <Compile Include="Tools\HldTemplateMatch.cs" />
+    <Compile Include="Tools\HldToolBlock.cs" />
+    <Compile Include="Tools\HldWarpping.cs" />
+    <Compile Include="Tools\HldWarppingPoint.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dll\DirectShowLib-2005.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\LICENSE.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\OpenCvSharp.Blob.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\OpenCvSharp.Blob.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\OpenCvSharp.CPlusPlus.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\OpenCvSharp.CPlusPlus.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\OpenCvSharp.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\OpenCvSharp.Extensions.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\OpenCvSharp.Extensions.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\OpenCvSharp.UserInterface.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\OpenCvSharp.UserInterface.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\OpenCvSharp.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\OpenCvSharpExtern.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_calib3d2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_calib3d2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_contrib2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_contrib2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_core2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_core2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_features2d2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_features2d2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_ffmpeg2410_64.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_flann2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_flann2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_gpu2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_gpu2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_highgui2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_highgui2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_imgproc2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_imgproc2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_legacy2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_legacy2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_ml2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_ml2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_nonfree2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_nonfree2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_objdetect2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_objdetect2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_ocl2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_ocl2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_photo2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_photo2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_stitching2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_stitching2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_superres2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_superres2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_video2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_video2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_videostab2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x64\OpenCVSharp\opencv_videostab2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\LICENSE.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\OpenCvSharp.Blob.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\OpenCvSharp.Blob.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\OpenCvSharp.CPlusPlus.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\OpenCvSharp.CPlusPlus.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\OpenCvSharp.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\OpenCvSharp.Extensions.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\OpenCvSharp.Extensions.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\OpenCvSharp.UserInterface.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\OpenCvSharp.UserInterface.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\OpenCvSharp.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\OpenCvSharpExtern.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_calib3d2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_calib3d2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_contrib2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_contrib2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_core2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_core2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_features2d2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_features2d2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_ffmpeg2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_flann2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_flann2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_gpu2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_gpu2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_highgui2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_highgui2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_imgproc2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_imgproc2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_legacy2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_legacy2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_ml2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_ml2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_nonfree2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_nonfree2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_objdetect2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_objdetect2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_ocl2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_ocl2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_photo2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_photo2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_stitching2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_stitching2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_superres2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_superres2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_video2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_video2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_videostab2410.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\x86\OpenCVSharp\opencv_videostab2410d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dll\zxing.dll" />
+    <Content Include="Dll\zxing.presentation.dll" />
+    <None Include="Resources\SuccessIcon.png" />
+    <None Include="Resources\FailIcon.png" />
+    <None Include="Resources\plus.png" />
+    <None Include="Resources\minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dll\x64\OpenCVSharp\OpenCvSharp.Blob.dll.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Dll\x64\OpenCVSharp\OpenCvSharp.CPlusPlus.dll.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Dll\x64\OpenCVSharp\OpenCvSharp.dll.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Dll\x64\OpenCVSharp\README.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Dll\x86\OpenCVSharp\OpenCvSharp.Blob.dll.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Dll\x86\OpenCVSharp\OpenCvSharp.CPlusPlus.dll.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Dll\x86\OpenCVSharp\OpenCvSharp.dll.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Dll\x86\OpenCVSharp\README.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="tessdata\eng.traineddata" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HLDCameraDevice\HLDCameraDevice.csproj">
+      <Project>{a800a53d-977f-4f0f-b387-6c297aab831f}</Project>
+      <Name>HLDCameraDevice</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HLDCommon\HLDCommon.csproj">
+      <Project>{40e4c696-22b6-450c-86c1-720abb48d1af}</Project>
+      <Name>HLDCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Core\HldToolBlockTree.resx">
+      <DependentUpon>HldToolBlockTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\HldToolGroupForm.resx">
+      <DependentUpon>HldToolGroupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\HldToolListForm.resx">
+      <DependentUpon>HldToolListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\HldToolParamsEditForm.resx">
+      <DependentUpon>HldToolParamsEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\RenameForm.resx">
+      <DependentUpon>RenameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display\HldDisplayView.resx">
+      <DependentUpon>HldDisplayView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display\HldDisplayViewStatusBar.resx">
+      <DependentUpon>HldDisplayViewStatusBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display\HldHistogramBox.resx">
+      <DependentUpon>HldHistogramBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\Base\HldDisplayViewEdit.resx">
+      <DependentUpon>HldDisplayViewEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\Base\HldToolEditBase.resx">
+      <DependentUpon>HldToolEditBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\Base\HldToolEditForm.resx">
+      <DependentUpon>HldToolEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldAcqisitionEdit.resx">
+      <DependentUpon>HldAcqisitionEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldBarcodeEdit.resx">
+      <DependentUpon>HldBarcodeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldBlobEdit.resx">
+      <DependentUpon>HldBlobEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldBlurEdit.resx">
+      <DependentUpon>HldBlurEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldCaliperEdit.resx">
+      <DependentUpon>HldCaliperEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldCameraCalibrationEdit.resx">
+      <DependentUpon>HldCameraCalibrationEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldDataAnalysisEdit.resx">
+      <DependentUpon>HldDataAnalysisEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldDataLogEdit.resx">
+      <DependentUpon>HldDataLogEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldDistance2PEdit.resx">
+      <DependentUpon>HldDistance2PEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldDistance3PEdit.resx">
+      <DependentUpon>HldDistance3PEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldEdgeEdit.resx">
+      <DependentUpon>HldEdgeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldEqualizerEdit.resx">
+      <DependentUpon>HldEqualizerEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldFindLineEdit.resx">
+      <DependentUpon>HldFindLineEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldFindParallelLineEdit.resx">
+      <DependentUpon>HldFindParallelLineEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldFixtureEdit.resx">
+      <DependentUpon>HldFixtureEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldHistogramEdit.resx">
+      <DependentUpon>HldHistogramEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldImageCalculateEdit.resx">
+      <DependentUpon>HldImageCalculateEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldImageConverterEdit.resx">
+      <DependentUpon>HldImageConverterEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldImageSaveEdit.resx">
+      <DependentUpon>HldImageSaveEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldIntersectLineEdit.resx">
+      <DependentUpon>HldIntersectLineEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldJobEdit.resx">
+      <DependentUpon>HldJobEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldJudgementEdit.resx">
+      <DependentUpon>HldJudgementEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldMakeLatticeEdit.resx">
+      <DependentUpon>HldMakeLatticeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldMakeLineEdit.resx">
+      <DependentUpon>HldMakeLineEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldMakePointEdit.resx">
+      <DependentUpon>HldMakePointEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldMakeRectFromLineEdit.resx">
+      <DependentUpon>HldMakeRectFromLineEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldMakeRegionsEdit.resx">
+      <DependentUpon>HldMakeRegionsEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldMaskingEdit.resx">
+      <DependentUpon>HldMaskingEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldMeasureSharpnessEdit.resx">
+      <DependentUpon>HldMeasureSharpnessEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldMorphologyEdit.resx">
+      <DependentUpon>HldMorphologyEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldReadOCREdit.resx">
+      <DependentUpon>HldReadOCREdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldRegionEdit.resx">
+      <DependentUpon>HldRegionEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldResultAnalysisEdit.resx">
+      <DependentUpon>HldResultAnalysisEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldRotationEdit.resx">
+      <DependentUpon>HldRotationEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldSharpnessEdit.resx">
+      <DependentUpon>HldSharpnessEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldSubImageEdit.resx">
+      <DependentUpon>HldSubImageEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldTemplateMatchEdit.resx">
+      <DependentUpon>HldTemplateMatchEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldToolBlockEdit.resx">
+      <DependentUpon>HldToolBlockEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldWarppingEdit.resx">
+      <DependentUpon>HldWarppingEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\HldWarppingPointEdit.resx">
+      <DependentUpon>HldWarppingPointEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

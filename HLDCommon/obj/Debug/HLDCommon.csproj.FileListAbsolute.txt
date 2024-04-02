@@ -1,0 +1,23 @@
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCommon\bin\Debug\HLDCommon.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCommon\bin\Debug\HLDCommon.pdb
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCommon\bin\Debug\log4net.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCommon\bin\Debug\OpenCvSharp.Blob.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCommon\bin\Debug\OpenCvSharp.CPlusPlus.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCommon\bin\Debug\OpenCvSharp.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCommon\bin\Debug\OpenCvSharp.Extensions.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCommon\bin\Debug\OpenCvSharp.UserInterface.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCommon\bin\Debug\OpenCvSharp.xml
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCommon\bin\Debug\OpenCvSharp.Blob.xml
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCommon\bin\Debug\OpenCvSharp.CPlusPlus.xml
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCommon\bin\Debug\OpenCvSharp.Extensions.xml
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCommon\bin\Debug\OpenCvSharp.UserInterface.xml
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\HLDCommon.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLD_Vision_Total\Output\HLDCommon.pdb
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCommon\obj\Debug\HLDCommon.dll
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCommon\obj\Debug\HLDCommon.pdb
+C:\Users\SDV\Documents\Visual Studio 2013\Projects\HLD\HLD_Vision_2023\HLD_Vision_Total\HLDCommon\obj\Debug\HLDCommon.csprojResolveAssemblyReference.cache
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\HLDCommon.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total\Output\HLDCommon.pdb
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLDCommon\obj\Debug\HLDCommon.csprojResolveAssemblyReference.cache
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLDCommon\obj\Debug\HLDCommon.dll
+C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLDCommon\obj\Debug\HLDCommon.pdb
