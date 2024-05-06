@@ -1,0 +1,15 @@
+﻿<Application x:Class="HLD_Vision_GUI.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Themes\ThemeBrush.xaml"/>
+                <ResourceDictionary Source="Themes\ThemeTextBlock.xaml"/>
+                <ResourceDictionary Source="Themes\ThemeButton.xaml"/>
+                <ResourceDictionary Source="Themes\ThemeOthers.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HLDVision", "HLDVision\HLDV
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HLDCalibration", "HLDCalibration\HLDCalibration.csproj", "{D6308869-7028-434F-AE48-3D506B5B00C9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HLD_Vision_GUI", "HLD_Vision_GUI\HLD_Vision_GUI.csproj", "{032C18F1-0D6C-435C-946A-347B5F151BDB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,7 +24,6 @@ Global
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{6C1B178F-DD52-471D-9C8E-A88BAF1376E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6C1B178F-DD52-471D-9C8E-A88BAF1376E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C1B178F-DD52-471D-9C8E-A88BAF1376E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C1B178F-DD52-471D-9C8E-A88BAF1376E3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{40E4C696-22B6-450C-86C1-720ABB48D1AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -45,6 +46,10 @@ Global
 		{D6308869-7028-434F-AE48-3D506B5B00C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6308869-7028-434F-AE48-3D506B5B00C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6308869-7028-434F-AE48-3D506B5B00C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{032C18F1-0D6C-435C-946A-347B5F151BDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{032C18F1-0D6C-435C-946A-347B5F151BDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{032C18F1-0D6C-435C-946A-347B5F151BDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{032C18F1-0D6C-435C-946A-347B5F151BDB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,648 @@
+﻿<UserControl x:Class="HLD_Vision_GUI.View.SetupView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HLD_Vision_GUI"
+             mc:Ignorable="d" d:DesignWidth="2539.821" d:DesignHeight="1522.045" Loaded="UserControl_Loaded">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1.5*"/>
+        </Grid.RowDefinitions>
+        <GroupBox Header="System Data">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <GroupBox Header="Process">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="7*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        <ListView Name="lvProcess" ItemsSource="{Binding ProcessDatas}" Background="#FFF0F0F0" SelectionChanged="lvProcess_SelectionChanged">
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn Header="Process">
+                                        <GridViewColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding ProcessName}" Width="100" HorizontalAlignment="Center"/>
+                                            </DataTemplate>
+                                        </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+                                    <GridViewColumn Header="Use">
+                                        <GridViewColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <CheckBox IsChecked="{Binding Use}" IsEnabled="{Binding IsNotCommon}" HorizontalAlignment="Center" Background="White" Width="20"/>
+                                            </DataTemplate>
+                                        </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+                                    <GridViewColumn Header="Display">
+                                        <GridViewColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <ComboBox SelectedItem="{Binding DisplayOrder}" IsEnabled="{Binding IsUse_NotCommon}" ItemsSource="{Binding OrderList}" Width="30"/>
+                                            </DataTemplate>
+                                        </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+                                    <GridViewColumn Header="Thread">
+                                        <GridViewColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <ComboBox SelectedItem="{Binding ThreadName}" IsEnabled="{Binding IsUse_NotCommon}" ItemsSource="{Binding ProcessTypes}" Width="200"/>
+                                            </DataTemplate>
+                                        </GridViewColumn.CellTemplate>
+                                        <!--</GridViewColumn>
+                                    <GridViewColumn Header="Skip">
+                                        <GridViewColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <CheckBox ToolTip="Skip Align" IsChecked="{Binding IsSkipAlign}" IsEnabled="{Binding Use}" HorizontalAlignment="Center" Background="White" Width="20"/>
+                                            </DataTemplate>
+                                        </GridViewColumn.CellTemplate>-->
+                                    </GridViewColumn>
+                                    <GridViewColumn Header="UseInsp">
+                                        <GridViewColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <CheckBox ToolTip="Use Inspection" IsChecked="{Binding UseInspect}" IsEnabled="{Binding Use}" HorizontalAlignment="Center" Background="White" Width="20"/>
+                                            </DataTemplate>
+                                        </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+                                    <GridViewColumn Header="InspecType">
+                                        <GridViewColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <ComboBox SelectedItem="{Binding InspType}" IsEnabled="{Binding IsInspect}" ItemsSource="{Binding InspTypes}" Width="80"/>
+                                            </DataTemplate>
+                                        </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+                                    <GridViewColumn Header="InspecTool">
+                                        <GridViewColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <ComboBox SelectedItem="{Binding InspTool}" IsEnabled="{Binding IsInspect}" ItemsSource="{Binding InspTools}" Width="70"/>
+                                            </DataTemplate>
+                                        </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+                                    <GridViewColumn Header="Flow">
+                                        <GridViewColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <ComboBox SelectedItem="{Binding FlowType}" IsEnabled="{Binding Use}" ItemsSource="{Binding FlowTypes}" Width="70"/>
+                                            </DataTemplate>
+                                        </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+                                    <GridViewColumn Header="Judge">
+                                        <GridViewColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <ComboBox SelectedItem="{Binding JudgeType}" IsEnabled="{Binding Use}" ItemsSource="{Binding JudgeTypes}" Width="70"/>
+                                            </DataTemplate>
+                                        </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+                                    <GridViewColumn Header="M-CHECK">
+                                        <GridViewColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <CheckBox IsChecked="{Binding UseManualAlign}" IsEnabled="{Binding Use}" HorizontalAlignment="Center" Background="White" Width="20"/>
+                                            </DataTemplate>
+                                        </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+                                    <GridViewColumn Header="Retry">
+                                        <GridViewColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <CheckBox IsChecked="{Binding UseVisionRetry}" IsEnabled="{Binding Use}" HorizontalAlignment="Center" Background="White" Width="20"/>
+                                            </DataTemplate>
+                                        </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+                                    <GridViewColumn Header="AcqComp">
+                                        <GridViewColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <CheckBox IsChecked="{Binding UseAcqComp}" IsEnabled="{Binding Use}" HorizontalAlignment="Center" Background="White" Width="20"/>
+                                            </DataTemplate>
+                                        </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+                                    <GridViewColumn Header="I/O">
+                                        <GridViewColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <ComboBox SelectedItem="{Binding IOType}" IsEnabled="{Binding Use}" ItemsSource="{Binding IOTypes}" Width="100"/>
+                                            </DataTemplate>
+                                        </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+                                    <GridViewColumn Header="InAddr">
+                                        <GridViewColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <Label Content="{Binding InStartAddr}" Tag="{Binding ProcessName}" IsEnabled="{Binding Use}" Width="30" HorizontalContentAlignment="Right" MouseDoubleClick="Input_MouseDoubleClick"/>
+                                            </DataTemplate>
+                                        </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+                                    <GridViewColumn Header="OutAddr">
+                                        <GridViewColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <Label Content="{Binding OutStartAddr}" Tag="{Binding ProcessName}" IsEnabled="{Binding Use}" Width="30" HorizontalContentAlignment="Right" MouseDoubleClick="Output_MouseDoubleClick"/>
+                                            </DataTemplate>
+                                        </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+                                    <GridViewColumn Header="Robot">
+                                        <GridViewColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <ComboBox SelectedItem="{Binding RobotType}" IsEnabled="{Binding Use}" ItemsSource="{Binding RobotTypes}" Width="100"/>
+                                            </DataTemplate>
+                                        </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+                                    <GridViewColumn Header="IPAddr">
+                                        <GridViewColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBox Text="{Binding IPAddr}" IsEnabled="{Binding IsUse_NotMxCom}" Width="100" HorizontalContentAlignment="Right"/>
+                                            </DataTemplate>
+                                        </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+                                    <GridViewColumn Header="Reverse">
+                                        <GridViewColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <CheckBox ToolTip="Reverse" IsChecked="{Binding InspReverse}" IsEnabled="{Binding Use}" HorizontalAlignment="Center" Background="White" Width="20"/>
+                                            </DataTemplate>
+                                        </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+                                    <GridViewColumn Header="InspAddr">
+                                        <GridViewColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBox Text="{Binding StrInspAddr}" IsEnabled="{Binding Use}" Width="50" HorizontalContentAlignment="Right" PreviewKeyDown="TextBox_KeyDown"/>
+                                            </DataTemplate>
+                                        </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+                                    <GridViewColumn Header="OffsetAddr">
+                                        <GridViewColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBox Text="{Binding StrStartAddr}" IsEnabled="{Binding Use}" Width="50" HorizontalContentAlignment="Right" PreviewKeyDown="TextBox_KeyDown"/>
+                                            </DataTemplate>
+                                        </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+                                    <GridViewColumn Header="CellIDAddr">
+                                        <GridViewColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBox Text="{Binding StrCellIDAddr}" IsEnabled="{Binding Use}" Width="50" HorizontalContentAlignment="Right" PreviewKeyDown="TextBox_KeyDown"/>
+                                            </DataTemplate>
+                                        </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+                                    <GridViewColumn Header="FDC">
+                                        <GridViewColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <CheckBox ToolTip="Write FDC" IsChecked="{Binding WriteFDC}" IsEnabled="{Binding Use}" HorizontalAlignment="Center" Background="White" Width="20"/>
+                                            </DataTemplate>
+                                        </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+                                    <GridViewColumn Header="FDCAddr">
+                                        <GridViewColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBox Text="{Binding StrFDCAddr}" IsEnabled="{Binding Use}" Width="50" HorizontalContentAlignment="Right" PreviewKeyDown="TextBox_KeyDown"/>
+                                            </DataTemplate>
+                                        </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
+
+                        <GroupBox Header="Common" Grid.Column="1">
+                            <ScrollViewer>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="5*"/>
+                                        <RowDefinition Height="2*"/>
+                                        <RowDefinition Height=".5*"/>
+                                    </Grid.RowDefinitions>
+
+                                    <ListView Name="lstRef" Grid.Row="0" ItemsSource="{Binding RefProcPool}" SelectionMode="Multiple" SelectionChanged="lstRef_SelectionChanged">
+                                        <ListView.View>
+                                            <GridView>
+                                                <GridViewColumn Header="Reference"/>
+                                            </GridView>
+                                        </ListView.View>
+                                    </ListView>
+                                    <GroupBox Header="Camera" Grid.Row="1">
+                                        <UniformGrid Rows="3" Columns="2">
+                                            <TextBlock Text="Focal Length" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                            <TextBox Name="tbFocalLength" Text="{Binding StrFocalLength}" HorizontalContentAlignment="Right"/>
+                                            <TextBlock Text="Sensor Width" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                            <TextBox Name="tbSensorWidth" Text="{Binding StrSensorWidth}" HorizontalContentAlignment="Right"/>
+                                            <TextBlock Text="Sensor Height" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                            <TextBox Name="tbSensorHeight" Text="{Binding StrSensorHeight}" HorizontalContentAlignment="Right"/>
+                                        </UniformGrid>
+                                    </GroupBox>
+                                    <UniformGrid Grid.Row="2" Rows="1" Columns="2">
+                                        <TextBlock Text="Root Path" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        <ComboBox ItemsSource="{Binding RootList}" SelectedItem="{Binding RootPath}"/>
+                                    </UniformGrid>
+                                </Grid>
+                            </ScrollViewer>
+                        </GroupBox>
+
+
+
+
+                    </Grid>
+
+                </GroupBox>
+                <GroupBox Header="Common" Grid.Column="1">
+                    <ScrollViewer>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="3*"/>
+                                <RowDefinition Height="4*"/>
+                            </Grid.RowDefinitions>
+                            <GroupBox Header="Interface" Grid.Row="0">
+                                <UniformGrid Rows="5" Columns="2">
+                                    <TextBlock Text="Station No" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <TextBox Text="{Binding StationNumber}" HorizontalContentAlignment="Right"/>
+                                    <TextBlock Text="Port No" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <TextBox Text="{Binding PortNumber}" HorizontalContentAlignment="Right"/>
+                                    <TextBlock Text="Device Type" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <ComboBox ItemsSource="{Binding DeviceTypePool}" SelectedItem="{Binding DeviceType}"/>
+                                    <TextBlock Text="OP Call Bit" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <TextBox Text="{Binding OPCallAddress}" HorizontalContentAlignment="Right"/>
+                                    <TextBlock Text="IO Thread Sleep" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <TextBox Text="{Binding ThreadSleep}" HorizontalContentAlignment="Right"/>
+                                </UniformGrid>
+                            </GroupBox>
+                            <GroupBox Header="Log" Grid.Row="1" Grid.Column="0">
+                                <ListView Name="lvLogConfig" Background="#FFF0F0F0">
+                                    <ListView.View>
+                                        <GridView>
+                                            <GridViewColumn Header="Kind">
+                                                <GridViewColumn.CellTemplate>
+                                                    <DataTemplate>
+                                                        <TextBlock Text="{Binding Name}" HorizontalAlignment="Center"/>
+                                                    </DataTemplate>
+                                                </GridViewColumn.CellTemplate>
+                                            </GridViewColumn>
+                                            <GridViewColumn Header="Count">
+                                                <GridViewColumn.CellTemplate>
+                                                    <DataTemplate>
+                                                        <TextBox Text="{Binding StrSaveDate}" Width="40" HorizontalContentAlignment="Right" HorizontalAlignment="Center" PreviewKeyDown="TextBox_KeyDown"/>
+                                                    </DataTemplate>
+                                                </GridViewColumn.CellTemplate>
+                                            </GridViewColumn>
+                                            <GridViewColumn Header="Save">
+                                                <GridViewColumn.CellTemplate>
+                                                    <DataTemplate>
+                                                        <CheckBox IsChecked="{Binding IsSave}" Width="30" Background="white" HorizontalAlignment="Center"/>
+                                                    </DataTemplate>
+                                                </GridViewColumn.CellTemplate>
+                                            </GridViewColumn>
+                                        </GridView>
+                                    </ListView.View>
+                                </ListView>
+                            </GroupBox>
+                        </Grid>
+                    </ScrollViewer>
+                </GroupBox>
+                <Grid Grid.Column="2">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="8*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <GroupBox Header="IOC Connect" Grid.Row="0">
+                        <UniformGrid Rows="8" Columns="2">
+                            <TextBlock Text="IOC IP" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <TextBox Text="{Binding IOCIP}" HorizontalContentAlignment="Right"/>
+                            <TextBlock Text="IOC Port No" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <TextBox Text="{Binding IOCPortNumber}" HorizontalContentAlignment="Right"/>
+                            <TextBlock Text="Machine Name" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <TextBox Text="{Binding MachineName}" HorizontalContentAlignment="Right"/>
+                            <TextBlock Text="Machine No" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <TextBox Text="{Binding MachineNumber}" HorizontalContentAlignment="Right"/>
+                            <TextBlock Text="Vision IP" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <TextBox Text="{Binding VisionIP}" HorizontalContentAlignment="Right" Margin="0,0,-1,0"/>
+                        </UniformGrid>
+                    </GroupBox>
+                    <Button Content="CHANGE PASSWORD" Grid.Row="1" Click="ChangePassword_Click"/>
+                    <Button Content="RELOAD" Grid.Row="2" Click="ReloadSystem_Click"/>
+                    <Button Content="SAVE" Grid.Row="3" Click="SaveSystem_Click"/>
+                </Grid>
+            </Grid>
+        </GroupBox>
+        <GroupBox Grid.Row="1" Header="Recipe Data">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="7*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <GroupBox Header="Recipe">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="15*"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+                        <ListBox Name="lstRecipe" ItemsSource="{Binding RecipeDatas}">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding RecipeName}"/>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                        <UniformGrid Grid.Row="1" Columns="3">
+                            <Button Content="NEW" Click="RecipeCreate_Click"/>
+                            <Button Content="COPY" Click="RecipeCopy_Click"/>
+                            <Button Content="DEL" Click="RecipeDelete_Click"/>
+                        </UniformGrid>
+                    </Grid>
+                </GroupBox>
+                <GroupBox Header="Process" Grid.Column="1">
+                    <ListBox Name="lstProcess" ItemsSource="{Binding ProcDatas}">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Process}"/>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </GroupBox>
+                <GroupBox Header="Setting" Grid.Column="2">
+                    <Grid Grid.Column="2" IsEnabled="{Binding IsEnableSetting}">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="341*"/>
+                            <ColumnDefinition Width="274*"/>
+                            <ColumnDefinition Width="1089*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="3*"/>
+                                <RowDefinition Height="1*"/>
+                            </Grid.RowDefinitions>
+                            <GroupBox Header="Job">
+                                <ListBox Name="lstJob" SelectedItem="{Binding JobName}" IsSynchronizedWithCurrentItem="True"/>
+                            </GroupBox>
+                            <GroupBox Header="Inspection" Grid.Row="3" Visibility="{Binding IsInspect}">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="1*"/>
+                                        <RowDefinition Height="3*"/>
+                                    </Grid.RowDefinitions>
+                                    <UniformGrid Grid.Row="1" Rows="3" Columns="2" Grid.RowSpan="2">
+                                        <TextBlock Text="UpperRate" Foreground="Black"/>
+                                        <TextBox Text="{Binding UpperRate}" HorizontalContentAlignment="Right"/>
+                                        <TextBlock Text="LowerRate" Foreground="Black"/>
+                                        <TextBox Text="{Binding LowerRate}" HorizontalContentAlignment="Right"/>
+                                        <RadioButton Content="HIGH" IsChecked="{Binding IsHigh}" ToolTip="Upper보다 높으면 패널 있음"/>
+                                        <RadioButton Content="LOW" IsChecked="{Binding IsLow}" ToolTip="Lower보다 낮으면 패널 있음"/>
+                                    </UniformGrid>
+                                    <Button Grid.Row="0" Content="SET HISTO BASE" Click="SetHistoBase_Clicked"/>
+                                </Grid>
+                            </GroupBox>
+                        </Grid>
+                        <GroupBox Header="Model" Grid.Column="1">
+                            <ScrollViewer>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="1.2*"/>
+                                        <RowDefinition Height="2*"/>
+                                        <RowDefinition Height="3*"/>
+                                        <RowDefinition Height="4*"/>
+                                        <RowDefinition Height="2*"/>
+                                    </Grid.RowDefinitions>
+                                    <GroupBox Header="Templete">
+                                        <UniformGrid Rows="1" Columns="2">
+                                            <TextBlock Text="Score ≥" Foreground="Black" Grid.Row="0"/>
+                                            <TextBox Text="{Binding Score}" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Grid.Column="1"/>
+                                        </UniformGrid>
+                                    </GroupBox>
+                                    <GroupBox Header="Find Line" Grid.Row="1">
+                                        <UniformGrid Columns="2" Rows="2">
+                                            <TextBlock Text="Distance ≤" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Black"/>
+                                            <TextBox Text="{Binding Distance}" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="3" PreviewKeyDown="TextBox_KeyDown"/>
+                                            <TextBlock Text="OK Count ≥" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Black"/>
+                                            <TextBox Text="{Binding Count}" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="3" PreviewKeyDown="TextBox_KeyDown"/>
+                                        </UniformGrid>
+                                    </GroupBox>
+                                    <GroupBox Header="Intesect Line" Grid.Row="2">
+                                        <UniformGrid Rows="3" Columns="2">
+                                            <TextBlock Text="|Angle - 90º| ≤" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Black"/>
+                                            <TextBox Text="{Binding Angle}" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="3" PreviewKeyDown="TextBox_KeyDown"/>
+                                            <TextBlock Text="Length [mm]" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Black"/>
+                                            <TextBox Text="{Binding Length}" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="3" PreviewKeyDown="TextBox_KeyDown"/>
+                                            <TextBlock Text="Tolerence [mm]" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Black"/>
+                                            <TextBox Text="{Binding Tolerence}" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="3" PreviewKeyDown="TextBox_KeyDown"/>
+                                        </UniformGrid>
+                                    </GroupBox>
+                                    <GroupBox Header="Tape Inspection" Grid.Row="3" Visibility="{Binding IsShowTapeInspection}">
+                                        <UniformGrid Rows="5" Columns="2">
+                                            <TextBlock Text="D1 Length [mm]" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Black"/>
+                                            <TextBox Text="{Binding TapeD1}" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="3" PreviewKeyDown="TextBox_KeyDown"/>
+                                            <TextBlock Text="D2 Length [mm]" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Black"/>
+                                            <TextBox Text="{Binding TapeD2}" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="3" PreviewKeyDown="TextBox_KeyDown"/>
+                                            <TextBlock Text="Dist Tol [mm]" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Black"/>
+                                            <TextBox Text="{Binding TapeDistTolerance}" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="3" PreviewKeyDown="TextBox_KeyDown"/>
+                                            <TextBlock Text="Angle [deg]" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Black"/>
+                                            <TextBox Text="{Binding TapeTheta}" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="3" PreviewKeyDown="TextBox_KeyDown"/>
+                                            <TextBlock Text="Angle Tol [deg]" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Black"/>
+                                            <TextBox Text="{Binding TapeAngleTolerance}" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="3" PreviewKeyDown="TextBox_KeyDown"/>
+                                        </UniformGrid>
+                                    </GroupBox>
+                                    <GroupBox Header="Tray Edit" Grid.Row="4" Visibility="{Binding IsShowTrayEdit}">
+                                        <Button Content="TRAY JOB EDIT" Click="TrayJobEdit_Click"/>
+                                    </GroupBox>
+
+                                </Grid>
+                            </ScrollViewer>
+                        </GroupBox>
+                        <GroupBox Header="Robot" Grid.Column="2" Margin="0,2,2,0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="241*"/>
+                                    <ColumnDefinition Width="392*"/>
+                                    <ColumnDefinition Width="448*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="1*"/>
+                                </Grid.RowDefinitions>
+                                <GroupBox Header="Calibration" Grid.Column="0">
+                                    <ListBox Name="lstCalib" SelectedItem="{Binding CalibrationName}" IsSynchronizedWithCurrentItem="True"/>
+                                </GroupBox>
+                                <GroupBox Header="Tray Size" Grid.Column="0" Grid.Row="1">
+                                    <UniformGrid Rows="5" Columns="2">
+                                        <TextBlock Text="Width" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Black"/>
+                                        <TextBox Text="{Binding StrTrayWidth}" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="3"/>
+                                        <TextBlock Text="Height" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Black"/>
+                                        <TextBox Text="{Binding StrTrayHeight}" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="3"/>
+                                        <TextBlock Text="Tolerance" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Black"/>
+                                        <TextBox Text="{Binding StrTrayTolerance}" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="3"/>
+                                    </UniformGrid>
+                                </GroupBox>
+                                <GroupBox Header="Reference Position" Grid.Column="1">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="4*"/>
+                                            <RowDefinition Height="1*"/>
+                                        </Grid.RowDefinitions>
+                                        <ListView ItemsSource="{Binding LoadPositions}" Background="#FFF0F0F0">
+                                            <ListView.ItemContainerStyle>
+                                                <Style TargetType="{x:Type ListViewItem}">
+                                                    <Setter Property="Visibility" Value="{Binding Visible}"/>
+                                                </Style>
+                                            </ListView.ItemContainerStyle>
+                                            <ListView.View>
+                                                <GridView>
+                                                    <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}"/>
+                                                    <GridViewColumn Header="X">
+                                                        <GridViewColumn.CellTemplate>
+                                                            <DataTemplate>
+                                                                <TextBox Text="{Binding X}" Width="50" HorizontalContentAlignment="Right" PreviewKeyDown="TextBox_KeyDown"/>
+                                                            </DataTemplate>
+                                                        </GridViewColumn.CellTemplate>
+                                                    </GridViewColumn>
+                                                    <GridViewColumn Header="Y">
+                                                        <GridViewColumn.CellTemplate>
+                                                            <DataTemplate>
+                                                                <TextBox Text="{Binding Y}" Width="50" HorizontalContentAlignment="Right" PreviewKeyDown="TextBox_KeyDown"/>
+                                                            </DataTemplate>
+                                                        </GridViewColumn.CellTemplate>
+                                                    </GridViewColumn>
+                                                    <GridViewColumn Header="T">
+                                                        <GridViewColumn.CellTemplate>
+                                                            <DataTemplate>
+                                                                <TextBox Text="{Binding T}" Width="50" HorizontalContentAlignment="Right" PreviewKeyDown="TextBox_KeyDown"/>
+                                                            </DataTemplate>
+                                                        </GridViewColumn.CellTemplate>
+                                                    </GridViewColumn>
+                                                </GridView>
+                                            </ListView.View>
+                                        </ListView>
+                                        <Button Grid.Row="1" Content="GET LOADING POS" Click="GetLoadingPos_Click" Visibility="{Binding IsShowLoadPosEdit}"/>
+                                    </Grid>
+                                </GroupBox>
+                                <Grid Grid.Column="2">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="1*"/>
+                                        <RowDefinition Height="1*"/>
+                                    </Grid.RowDefinitions>
+                                    <GroupBox Header="Robot Limit" Grid.Column="2">
+                                        <UniformGrid Rows="4" Columns="4">
+                                            <TextBlock/>
+                                            <TextBlock Text="X" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black"/>
+                                            <TextBlock Text="Y" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black"/>
+                                            <TextBlock Text="T" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black"/>
+                                            <TextBlock Text="MIN" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black"/>
+                                            <TextBox Text="{Binding XLimitMIN}" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" PreviewKeyDown="TextBox_KeyDown"/>
+                                            <TextBox Text="{Binding YLimitMIN}" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" PreviewKeyDown="TextBox_KeyDown"/>
+                                            <TextBox Text="{Binding ThetaLimitMIN}" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" PreviewKeyDown="TextBox_KeyDown"/>
+                                            <TextBlock Text="MAX" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black"/>
+                                            <TextBox Text="{Binding XLimitMAX}" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" PreviewKeyDown="TextBox_KeyDown"/>
+                                            <TextBox Text="{Binding YLimitMAX}" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" PreviewKeyDown="TextBox_KeyDown"/>
+                                            <TextBox Text="{Binding ThetaLimitMAX}" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" PreviewKeyDown="TextBox_KeyDown"/>
+                                        </UniformGrid>
+                                    </GroupBox>
+                                    <GroupBox Header="Pocket Distance" Grid.Row="1">
+                                        <UniformGrid Rows="4" Columns="3">
+                                            <TextBlock/>
+                                            <TextBlock Text="Distnace(㎜)" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black"/>
+                                            <TextBlock Text="±Tolerance(㎜)" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black"/>
+                                            <TextBlock Text="X" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black"/>
+                                            <TextBox Text="{Binding Distance_X}" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" PreviewKeyDown="TextBox_KeyDown"/>
+                                            <TextBox Text="{Binding Tolerence_X}" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" PreviewKeyDown="TextBox_KeyDown"/>
+                                            <TextBlock Text="Y" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black"/>
+                                            <TextBox Text="{Binding Distance_Y}" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" PreviewKeyDown="TextBox_KeyDown"/>
+                                            <TextBox Text="{Binding Tolerence_Y}" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" PreviewKeyDown="TextBox_KeyDown"/>
+                                        </UniformGrid>
+                                    </GroupBox>
+
+                                </Grid>
+
+
+                                <Grid Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="1*"/>
+                                        <RowDefinition Height="1*"/>
+                                    </Grid.RowDefinitions>
+                                    <GroupBox Header="Offset" Grid.Row="0">
+                                        <ListView ItemsSource="{Binding AlignOffsets}" Background="#FFF0F0F0">
+                                            <ListView.ItemContainerStyle>
+                                                <Style TargetType="{x:Type ListViewItem}">
+                                                    <Setter Property="Visibility" Value="{Binding Visible}"/>
+                                                </Style>
+                                            </ListView.ItemContainerStyle>
+                                            <ListView.View>
+                                                <GridView>
+                                                    <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}"/>
+                                                    <GridViewColumn Header="OK(X)">
+                                                        <GridViewColumn.CellTemplate>
+                                                            <DataTemplate>
+                                                                <TextBox Text="{Binding OK_X}" Width="70" HorizontalContentAlignment="Right" PreviewKeyDown="TextBox_KeyDown"/>
+                                                            </DataTemplate>
+                                                        </GridViewColumn.CellTemplate>
+                                                    </GridViewColumn>
+                                                    <GridViewColumn Header="OK(Y)">
+                                                        <GridViewColumn.CellTemplate>
+                                                            <DataTemplate>
+                                                                <TextBox Text="{Binding OK_Y}" Width="70" HorizontalContentAlignment="Right" PreviewKeyDown="TextBox_KeyDown"/>
+                                                            </DataTemplate>
+                                                        </GridViewColumn.CellTemplate>
+                                                    </GridViewColumn>
+                                                    <GridViewColumn Header="OK(T)">
+                                                        <GridViewColumn.CellTemplate>
+                                                            <DataTemplate>
+                                                                <TextBox Text="{Binding OK_T}" Width="70" HorizontalContentAlignment="Right" PreviewKeyDown="TextBox_KeyDown"/>
+                                                            </DataTemplate>
+                                                        </GridViewColumn.CellTemplate>
+                                                    </GridViewColumn>
+                                                    <GridViewColumn Header="NG(X)">
+                                                        <GridViewColumn.CellTemplate>
+                                                            <DataTemplate>
+                                                                <TextBox Text="{Binding NG_X}" Width="70" HorizontalContentAlignment="Right" PreviewKeyDown="TextBox_KeyDown"/>
+                                                            </DataTemplate>
+                                                        </GridViewColumn.CellTemplate>
+                                                    </GridViewColumn>
+                                                    <GridViewColumn Header="NG(Y)">
+                                                        <GridViewColumn.CellTemplate>
+                                                            <DataTemplate>
+                                                                <TextBox Text="{Binding NG_Y}" Width="70" HorizontalContentAlignment="Right" PreviewKeyDown="TextBox_KeyDown"/>
+                                                            </DataTemplate>
+                                                        </GridViewColumn.CellTemplate>
+                                                    </GridViewColumn>
+                                                    <GridViewColumn Header="NG(T)">
+                                                        <GridViewColumn.CellTemplate>
+                                                            <DataTemplate>
+                                                                <TextBox Text="{Binding NG_T}" Width="70" HorizontalContentAlignment="Right" PreviewKeyDown="TextBox_KeyDown"/>
+                                                            </DataTemplate>
+                                                        </GridViewColumn.CellTemplate>
+                                                    </GridViewColumn>
+                                                </GridView>
+                                            </ListView.View>
+                                        </ListView>
+                                    </GroupBox>
+
+                                    <!--<GroupBox Header="Tray Offset Interlock" Grid.Row="1">
+                                        
+                                        <UniformGrid Rows="4" Columns="4">
+                                            <TextBlock/>
+                                            <TextBlock Text="X" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black"/>
+                                            <TextBlock Text="Y" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black"/>
+                                            <TextBlock Text="T" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black"/>
+                                            <TextBlock Text="Reference" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black"/>
+                                            <TextBox Text="{Binding Reference_X}" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" PreviewKeyDown="TextBox_KeyDown"/>
+                                            <TextBox Text="{Binding Reference_Y}" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" PreviewKeyDown="TextBox_KeyDown"/>
+                                            <TextBox Text="{Binding Reference_T}" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" PreviewKeyDown="TextBox_KeyDown"/>
+                                            <TextBlock Text="Tolerence" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black"/>
+                                            <TextBox Text="{Binding Tolerence_X}" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" PreviewKeyDown="TextBox_KeyDown"/>
+                                            <TextBox Text="{Binding Tolerence_Y}" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" PreviewKeyDown="TextBox_KeyDown"/>
+                                            <TextBox Text="{Binding Tolerence_T}" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" PreviewKeyDown="TextBox_KeyDown"/>
+                                        </UniformGrid>
+                                    </GroupBox>-->
+                                </Grid>
+                            </Grid>
+                        </GroupBox>
+                    </Grid>
+                </GroupBox>
+                <Grid Grid.Column="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="8*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <Button Content="RELOAD" Grid.Row="1" Click="ReloadRecipe_Click"/>
+                    <Button Content="SAVE" Grid.Row="2" Click="SaveRecipe_Click"/>
+                </Grid>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</UserControl>

@@ -1,0 +1,87 @@
+﻿<UserControl x:Class="HLD_Vision_GUI.View.CalibrationView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" d:DesignHeight="800" d:DesignWidth="1200">
+    <Grid>
+        <Grid.Resources>
+            <Style TargetType="TextBlock" BasedOn="{StaticResource  themeTextBlockBigLeft}"/>
+            <Style TargetType="Button" BasedOn="{StaticResource themeButtonNormal}">
+                <Setter Property="VerticalAlignment" Value="Center"/>
+                <Setter Property="Canvas.Top" Value="5"/>
+            </Style>
+            <Style TargetType="TextBox">
+                <Setter Property="FontFamily" Value="{StaticResource fontFamily}"/>
+                <Setter Property="FontSize" Value="{StaticResource fontSizeSmall}"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+                <Setter Property="Margin" Value="0, 0, 10, 0"/>
+            </Style>
+            <Style TargetType="ComboBox">
+                <Setter Property="FontFamily" Value="{StaticResource fontFamily}"/>
+                <Setter Property="FontSize" Value="{StaticResource fontSizeSmall}"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+                <Setter Property="Margin" Value="0, 0, 10, 0"/>
+            </Style>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="45"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="85"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="35"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Text="Robot:" Grid.Column="0"/>
+                    <ComboBox Grid.Column="1"/>
+                    
+                    <TextBlock Text="IP:" Grid.Column="2"/>
+                    <ComboBox Grid.Column="3"/>
+                </Grid>
+                <UniformGrid Rows="1" Grid.Column="1">
+                    <Button Content="Connect"/>
+                    <Button Content="Disconnect"/>
+                </UniformGrid>
+            </Grid>
+            
+            <Grid Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="80"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Index:" Grid.Column="0"/>
+                    <TextBox Grid.Column="1"/>
+                    
+                    <TextBlock Text="Value:" Grid.Column="2"/>
+                    <TextBox Grid.Column="3"/>
+                </Grid>
+                <UniformGrid Rows="1" Grid.Column="1">
+                    <Button Content="Read"/>
+                    <Button Content="Write"/>
+                </UniformGrid>
+            </Grid>
+        </Grid>
+        <WindowsFormsHost x:Name="host" Margin="0" Grid.Row="1"/>
+    </Grid>
+</UserControl>

@@ -1038,7 +1038,7 @@ namespace HLDVision.Core
                 }
             }
 
-            int WidthMargin = 120;
+            int WidthMargin = 200;
 
             public int Width;
             public int Height { get { return EP.Y - SP.Y + 1; } }

@@ -16,7 +16,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\HLD_Vision_Total\Output\</OutputPath>
+    <OutputPath>..\HLD_VisionOutput\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -69,9 +69,6 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="Tesseract">
-      <HintPath>D:\Non_Documents\MyProject\1. D&amp;L Project\D&amp;L Vis\HLD - LightController_230522\SvMip\tessdata\Tesseract.3.0.2.0\Tesseract.3.0.2.0\lib\net45\Tesseract.dll</HintPath>
-    </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="zxing, Version=0.16.0.0, Culture=neutral, PublicKeyToken=830ae994e36ac27d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -459,6 +456,7 @@
     <Compile Include="Tools\HldImageSave.cs" />
     <Compile Include="Tools\HldIntersectLine.cs" />
     <Compile Include="Tools\HldJudgement.cs" />
+    <Compile Include="Tools\HldJudgementOverpocket.cs" />
     <Compile Include="Tools\HldMakeLattice.cs" />
     <Compile Include="Tools\HldMakeLine.cs" />
     <Compile Include="Tools\HldMakePoint.cs" />
@@ -474,6 +472,7 @@
     <Compile Include="Tools\HldSharpness.cs" />
     <Compile Include="Tools\HldSubImage.cs" />
     <Compile Include="Tools\HldTemplateMatch.cs" />
+    <Compile Include="Tools\HldTemplateMatchOverpocket.cs" />
     <Compile Include="Tools\HldToolBlock.cs" />
     <Compile Include="Tools\HldWarpping.cs" />
     <Compile Include="Tools\HldWarppingPoint.cs" />

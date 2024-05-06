@@ -25,15 +25,12 @@ namespace HLD_Vision_Total
 
         private void LoadMainForm()
         {
-            //ucMain = new MainFrame();
+            ucMain = new MainFrame();
 
-            //ElementHost host = new ElementHost();
-            //host.Dock = DockStyle.Fill;
-            //host.Child = ucMain;
-            //ContentPanel.Controls.Add(host);
-
-
-            ContentPanel.Controls.Add(new Vision());
+            ElementHost host = new ElementHost();
+            host.Dock = DockStyle.Fill;
+            host.Child = ucMain;
+            ContentPanel.Controls.Add(host);
         }
     }
 }

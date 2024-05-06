@@ -1,0 +1,137 @@
+﻿<UserControl x:Class="HLD_Vision_GUI.View.AutoThread"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:HLD_Vision_GUI"
+             xmlns:disp="clr-namespace:HLDVision.Display;assembly=HLDVision"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="350" d:DesignWidth="500">
+
+    <Grid>
+        <GroupBox Header="{Binding Path=Name, UpdateSourceTrigger=PropertyChanged}" Margin="0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="200"/>
+                </Grid.ColumnDefinitions>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="12*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <Border Name="Viewer" Grid.Row="0" Grid.Column="0"/>
+                    <Border Grid.Row="1"/>
+                    <Viewbox Grid.Row="1">
+                        <TextBlock Text="{Binding VisionResult}" Foreground="{Binding ResultColor}" FontWeight="Bold"/>
+                    </Viewbox>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="10*"/>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                    </Grid.RowDefinitions>
+                    <UniformGrid Columns="2">
+                        <Label Background="{Binding IOConnectedColor, Mode=OneWay}" ToolTip="IO Connection"/>
+                        <Label Background="{Binding RobotConnectedColor, Mode=OneWay}" ToolTip="Robot Connection"/>
+                    </UniformGrid>
+                    <GroupBox Header="Status" Grid.Row="1" Grid.Column="1">
+                        <Grid IsEnabled="{Binding Path=IsEnable, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="1*"/>
+                            </Grid.ColumnDefinitions>
+                            <RadioButton Grid.Column="0" ToolTip="READY" Click="RadioButton_Click" IsChecked="{Binding Path=IsReady, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" Background="{Binding Path=Background, UpdateSourceTrigger=PropertyChanged}"/>
+                            <RadioButton Grid.Column="1" ToolTip="REQUEST" Click="RadioButton_Click" IsChecked="{Binding Path=IsRequest, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+                            <Grid Grid.Column="2">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="1*"/>
+                                </Grid.RowDefinitions>
+                                <Label Grid.RowSpan="2" Background="{Binding Color1}" Visibility="{Binding IsSingle}"/>
+                                <Label Grid.Row="0" Background="{Binding Color1}" Visibility="{Binding IsDual}"/>
+                                <Label Grid.Row="1" Background="{Binding Color2}" Visibility="{Binding IsDual}"/>
+                            </Grid>
+
+
+                            <RadioButton ToolTip="OK" Click="RadioButton_Click" IsChecked="{Binding Path=IsOK, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+                            <RadioButton ToolTip="NG" Click="RadioButton_Click" IsChecked="{Binding Path=IsNG, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+                            <RadioButton Grid.Column="3" ToolTip="COMPLETE" Click="RadioButton_Click" IsChecked="{Binding Path=IsComplete, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Header="Process Log" Grid.Row="2">
+                        <TabControl>
+                            <TabItem Header="Total">
+                                <ListView Name="lstSequence" ItemsSource="{Binding SequenceLogList}" Margin="0">
+                                    <ListView.ItemContainerStyle>
+                                        <Style TargetType="{x:Type ListViewItem}">
+                                            <Setter Property="Foreground" Value="{Binding TextColor}"/>
+                                            <Style.Triggers>
+                                                <Trigger Property="IsSelected" Value="true">
+                                                    <Setter Property="FontWeight" Value="ExtraBold"/>
+                                                </Trigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </ListView.ItemContainerStyle>
+                                    <ListView.View>
+                                        <GridView AllowsColumnReorder="True">
+                                            <GridViewColumn DisplayMemberBinding="{Binding Path=Time}" Header="Time"/>
+                                            <GridViewColumn DisplayMemberBinding="{Binding Path=Message}" Header="Message" Width="220"/>
+                                        </GridView>
+                                    </ListView.View>
+                                </ListView>
+                            </TabItem>
+                            <TabItem Header="Data">
+                                <ListView Name="lstDatalog" ItemsSource="{Binding DataLogList}" Margin="0">
+                                    <ListView.View>
+                                        <GridView AllowsColumnReorder="True">
+                                            <GridViewColumn DisplayMemberBinding="{Binding Path=Time}" Header="Time"/>
+                                            <GridViewColumn DisplayMemberBinding="{Binding Path=Process}" Header="Process" Width="50"/>
+                                            <GridViewColumn DisplayMemberBinding="{Binding Path=Result1}" Header="Result1" Width="70"/>
+                                            <GridViewColumn DisplayMemberBinding="{Binding Path=Result2}" Header="Result2" Width="70"/>
+                                            <GridViewColumn DisplayMemberBinding="{Binding Path=Result3}" Header="Result3" Width="70"/>
+                                        </GridView>
+                                    </ListView.View>
+                                </ListView>
+                            </TabItem>
+                            <TabItem Header="Object">
+                                <ListView Name="lstObjectlog" ItemsSource="{Binding ObjectPointLogList}" Margin="0">
+                                    <ListView.View>
+                                        <GridView AllowsColumnReorder="True">
+                                            <GridViewColumn DisplayMemberBinding="{Binding Path=Time}" Header="Time"/>
+                                            <GridViewColumn DisplayMemberBinding="{Binding Path=Process}" Header="Process" Width="50"/>
+                                            <GridViewColumn DisplayMemberBinding="{Binding Path=Result1}" Header="Result1" Width="70"/>
+                                            <GridViewColumn DisplayMemberBinding="{Binding Path=Result2}" Header="Result2" Width="70"/>
+                                            <GridViewColumn DisplayMemberBinding="{Binding Path=Result3}" Header="Result3" Width="70"/>
+                                        </GridView>
+                                    </ListView.View>
+                                </ListView>
+                            </TabItem>
+                            <TabItem Header="Target">
+                                <ListView Name="lstTargetlog" ItemsSource="{Binding TargetPointLogList}" Margin="0">
+                                    <ListView.View>
+                                        <GridView AllowsColumnReorder="True">
+                                            <GridViewColumn DisplayMemberBinding="{Binding Path=Time}" Header="Time"/>
+                                            <GridViewColumn DisplayMemberBinding="{Binding Path=Process}" Header="Process" Width="50"/>
+                                            <GridViewColumn DisplayMemberBinding="{Binding Path=Result1}" Header="Result1" Width="70"/>
+                                            <GridViewColumn DisplayMemberBinding="{Binding Path=Result2}" Header="Result2" Width="70"/>
+                                            <GridViewColumn DisplayMemberBinding="{Binding Path=Result3}" Header="Result3" Width="70"/>
+                                        </GridView>
+                                    </ListView.View>
+                                </ListView>
+                            </TabItem>
+                        </TabControl>
+
+                    </GroupBox>
+                    <GroupBox Header="Time Log" Grid.Row="3">
+                        <DataGrid Name="dgTimeLog" Margin="0" ItemsSource="{Binding Path=ProcessTimes, UpdateSourceTrigger=PropertyChanged}"/>
+                    </GroupBox>
+                </Grid>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</UserControl>

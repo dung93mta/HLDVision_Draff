@@ -508,5 +508,10 @@ namespace HLDCalibration
 
             DrawCalibrationResult(hldDisplayViewEdit.Display);
         }
+
+        private void tabControl_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

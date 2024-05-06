@@ -1,0 +1,64 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!--==========================================================================================================
+    Qui ước chung:
+     - Title:   Tiêu đề được đặt căn giữa
+     - Caption: Tiêu đề được đặt căn lề trái
+    
+     - Content: Nội dung thông tin được đặt căn giữa
+     - Infor:   Nội dung thông tin được đặt căn trái
+    
+     - Có 3 fontsize: Big (Chỉ áp dụng cho tên chương trình), Middle (Áp dụng cho hầu hết các nội dung), Small (Áp dụng cho phần thông tin phụ, bổ sung)
+     - Tất cả mặc định căn giữa theo chiều dọc, trừ trường hợp qui định riêng trong code
+     - Màu chữ mặc định màu trắng (sáng), trừ trường hợp qui định riêng trong code
+    ==========================================================================================================-->
+    <Style TargetType="TextBlock" x:Key="themeTextBlockBase">
+        <Setter Property="FontFamily" Value="{StaticResource fontFamily}"/>
+        <Setter Property="Foreground" Value="{StaticResource TextWriteBrush}"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Margin" Value="3"/>
+    </Style>
+    <!--==========================================================================================================-->
+    <!-- TextBlock căn trái -->
+    <Style TargetType="TextBlock" x:Key="themeTextBlockLeft" BasedOn="{StaticResource themeTextBlockBase}">
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+    </Style>
+
+    <Style TargetType="TextBlock" x:Key="themeTextBlockBigLeft" BasedOn="{StaticResource themeTextBlockLeft}">
+        <Setter Property="FontSize" Value="{StaticResource fontSizeMiddle}"/>
+    </Style>
+
+    <Style TargetType="TextBlock" x:Key="themeTextBlockSmallLeft" BasedOn="{StaticResource themeTextBlockLeft}">
+        <Setter Property="FontSize" Value="{StaticResource fontSizeSmall}"/>
+    </Style>
+
+    <!--==========================================================================================================-->
+    <!-- TextBlock căn giữa -->
+    <Style TargetType="TextBlock" x:Key="themeTextBlockCenter" BasedOn="{StaticResource themeTextBlockBase}">
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="TextAlignment" Value="Center"/>
+    </Style>
+
+    <Style TargetType="TextBlock" x:Key="themeTextBlockBigCenter" BasedOn="{StaticResource themeTextBlockCenter}">
+        <Setter Property="FontSize" Value="{StaticResource fontSizeMiddle}"/>
+    </Style>
+
+    <Style TargetType="TextBlock" x:Key="themeTextBlockSmallCenter" BasedOn="{StaticResource themeTextBlockCenter}">
+        <Setter Property="FontSize" Value="{StaticResource fontSizeSmall}"/>
+    </Style>
+    <!--==========================================================================================================-->
+    <Style TargetType="TextBlock" x:Key="themeTextBlockConnectState" BasedOn="{StaticResource themeTextBlockSmallLeft}">
+        <Setter Property="HorizontalAlignment" Value="Right"/>
+        <Setter Property="Foreground" Value="Yellow"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=Text}" Value="Connected!">
+                <Setter Property="Foreground" Value="LimeGreen"/>
+            </DataTrigger>
+
+            <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=Text}" Value="Disconnected!">
+                <Setter Property="Foreground" Value="Red"/>
+            </DataTrigger>
+        </Style.Triggers>
+
+    </Style>
+</ResourceDictionary>

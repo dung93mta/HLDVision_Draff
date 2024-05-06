@@ -3,8 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:HLD_Vision_Total"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             mc:Ignorable="d">
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008">
     <UserControl.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -108,8 +107,9 @@
                 </GroupBox>
 
                 <RadioButton Content="Thoát" Grid.Row="3"
-                         Command="{Binding cmdClose}"
-                         Style="{StaticResource themeButtonExit}"/>
+                             Click="btnExit_Click"
+                             Command="{Binding cmdClose}"
+                             Style="{StaticResource themeButtonExit}"/>
             </Grid>
         </Border>
 

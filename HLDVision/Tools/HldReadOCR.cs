@@ -8,7 +8,7 @@ using OpenCvSharp;
 using OpenCvSharp.CPlusPlus;
 using OpenCvSharp.Extensions;
 using System.Drawing;
-using Tesseract;
+//using Tesseract;
 
 namespace HLDVision
 {
@@ -201,19 +201,21 @@ namespace HLDVision
         }
         private string OCR(Bitmap b)
         {
-            string res = "";
-            try
-            {
-                var engine = new TesseractEngine(@"D:\Non_Documents\03 VISION\IVA-A_SDV 20200615\Output\Debug\", "eng", EngineMode.Default);
-                var page = engine.Process(b, PageSegMode.AutoOnly);
-                res = page.GetText();
-            }
-            catch (Exception ex)
-            {
-                string a = ex.ToString();
-            }
+            //string res = "";
+            //try
+            //{
+            //    var engine = new TesseractEngine(@"D:\Non_Documents\03 VISION\IVA-A_SDV 20200615\Output\Debug\", "eng", EngineMode.Default);
+            //    var page = engine.Process(b, PageSegMode.AutoOnly);
+            //    res = page.GetText();
+            //}
+            //catch (Exception ex)
+            //{
+            //    string a = ex.ToString();
+            //}
 
-            return res;
+            //return res;
+
+            return "dientudl.com";
         }
 
         public override void Run(bool isEditMode = false)

@@ -21,11 +21,17 @@ namespace HLD_Vision_Total
     /// </summary>
     public partial class MainFrame : UserControl
     {
-
         WindowsFormsHost host = new WindowsFormsHost();
         public MainFrame()
         {
             InitializeComponent();
+            host.Child = new Vision();
+            Middle.Child = host;
+        }
+
+        private void btnExit_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
         }
     }
 }

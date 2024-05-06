@@ -48,12 +48,13 @@
             // 
             // cb_coordinate
             // 
-            this.cb_coordinate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cb_coordinate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.cb_coordinate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_coordinate.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.cb_coordinate.Location = new System.Drawing.Point(426, 3);
+            this.cb_coordinate.Location = new System.Drawing.Point(321, 4);
             this.cb_coordinate.Name = "cb_coordinate";
-            this.cb_coordinate.Size = new System.Drawing.Size(101, 21);
+            this.cb_coordinate.Size = new System.Drawing.Size(105, 29);
             this.cb_coordinate.TabIndex = 4;
             // 
             // pn_Border
@@ -71,18 +72,19 @@
             this.pn_Border.Controls.Add(this.cb_coordinate);
             this.pn_Border.Controls.Add(this.cb_Zoom);
             this.pn_Border.Controls.Add(this.lbl_Coodination);
-            this.pn_Border.Location = new System.Drawing.Point(0, 0);
+            this.pn_Border.Location = new System.Drawing.Point(-1, 1);
             this.pn_Border.Margin = new System.Windows.Forms.Padding(0);
             this.pn_Border.Name = "pn_Border";
-            this.pn_Border.Size = new System.Drawing.Size(650, 28);
+            this.pn_Border.Size = new System.Drawing.Size(605, 40);
             this.pn_Border.TabIndex = 4;
             // 
             // ckb_AutoFit
             // 
-            this.ckb_AutoFit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ckb_AutoFit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.ckb_AutoFit.Checked = true;
             this.ckb_AutoFit.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ckb_AutoFit.Location = new System.Drawing.Point(233, 2);
+            this.ckb_AutoFit.Location = new System.Drawing.Point(74, 7);
             this.ckb_AutoFit.Name = "ckb_AutoFit";
             this.ckb_AutoFit.Size = new System.Drawing.Size(68, 22);
             this.ckb_AutoFit.TabIndex = 10;
@@ -92,10 +94,11 @@
             // 
             // ckb_Axis
             // 
-            this.ckb_Axis.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ckb_Axis.Location = new System.Drawing.Point(370, 2);
+            this.ckb_Axis.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ckb_Axis.Location = new System.Drawing.Point(249, 7);
             this.ckb_Axis.Name = "ckb_Axis";
-            this.ckb_Axis.Size = new System.Drawing.Size(54, 22);
+            this.ckb_Axis.Size = new System.Drawing.Size(66, 22);
             this.ckb_Axis.TabIndex = 9;
             this.ckb_Axis.Text = "Axis";
             this.ckb_Axis.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -103,10 +106,11 @@
             // 
             // ckb_drawCenter
             // 
-            this.ckb_drawCenter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ckb_drawCenter.Location = new System.Drawing.Point(305, 2);
+            this.ckb_drawCenter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ckb_drawCenter.Location = new System.Drawing.Point(148, 7);
             this.ckb_drawCenter.Name = "ckb_drawCenter";
-            this.ckb_drawCenter.Size = new System.Drawing.Size(63, 22);
+            this.ckb_drawCenter.Size = new System.Drawing.Size(95, 22);
             this.ckb_drawCenter.TabIndex = 8;
             this.ckb_drawCenter.Text = "C-Line";
             this.ckb_drawCenter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -114,18 +118,19 @@
             // 
             // pn_Plus
             // 
-            this.pn_Plus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pn_Plus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pn_Plus.BackColor = System.Drawing.Color.Gray;
             this.pn_Plus.Controls.Add(this.pb_Plus);
-            this.pn_Plus.Location = new System.Drawing.Point(602, 3);
+            this.pn_Plus.Location = new System.Drawing.Point(533, 4);
             this.pn_Plus.Name = "pn_Plus";
-            this.pn_Plus.Size = new System.Drawing.Size(20, 20);
+            this.pn_Plus.Size = new System.Drawing.Size(29, 29);
             this.pn_Plus.TabIndex = 7;
             // 
             // pb_Plus
             // 
             this.pb_Plus.BackColor = System.Drawing.Color.Gray;
-            this.pb_Plus.Location = new System.Drawing.Point(0, 0);
+            this.pb_Plus.Location = new System.Drawing.Point(-19, 7);
             this.pb_Plus.Margin = new System.Windows.Forms.Padding(0);
             this.pb_Plus.Name = "pb_Plus";
             this.pb_Plus.Size = new System.Drawing.Size(20, 20);
@@ -135,18 +140,19 @@
             // 
             // pn_Minus
             // 
-            this.pn_Minus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pn_Minus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pn_Minus.BackColor = System.Drawing.Color.Gray;
             this.pn_Minus.Controls.Add(this.pb_Minus);
-            this.pn_Minus.Location = new System.Drawing.Point(623, 3);
+            this.pn_Minus.Location = new System.Drawing.Point(568, 4);
             this.pn_Minus.Name = "pn_Minus";
-            this.pn_Minus.Size = new System.Drawing.Size(20, 20);
+            this.pn_Minus.Size = new System.Drawing.Size(29, 29);
             this.pn_Minus.TabIndex = 7;
             // 
             // pb_Minus
             // 
             this.pb_Minus.BackColor = System.Drawing.Color.Gray;
-            this.pb_Minus.Location = new System.Drawing.Point(0, 0);
+            this.pb_Minus.Location = new System.Drawing.Point(-19, 7);
             this.pb_Minus.Margin = new System.Windows.Forms.Padding(0);
             this.pb_Minus.Name = "pb_Minus";
             this.pb_Minus.Size = new System.Drawing.Size(20, 20);
@@ -156,34 +162,37 @@
             // 
             // cb_Zoom
             // 
-            this.cb_Zoom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cb_Zoom.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.cb_Zoom.FormattingEnabled = true;
             this.cb_Zoom.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.cb_Zoom.Location = new System.Drawing.Point(531, 3);
+            this.cb_Zoom.Location = new System.Drawing.Point(432, 4);
             this.cb_Zoom.Name = "cb_Zoom";
-            this.cb_Zoom.Size = new System.Drawing.Size(68, 21);
+            this.cb_Zoom.Size = new System.Drawing.Size(95, 29);
             this.cb_Zoom.TabIndex = 4;
             // 
             // lbl_Coodination
             // 
-            this.lbl_Coodination.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.lbl_Coodination.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_Coodination.BackColor = System.Drawing.SystemColors.Control;
             this.lbl_Coodination.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lbl_Coodination.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.lbl_Coodination.Location = new System.Drawing.Point(2, 3);
+            this.lbl_Coodination.Location = new System.Drawing.Point(2, 2);
             this.lbl_Coodination.Margin = new System.Windows.Forms.Padding(0);
             this.lbl_Coodination.Name = "lbl_Coodination";
-            this.lbl_Coodination.Size = new System.Drawing.Size(212, 20);
+            this.lbl_Coodination.Size = new System.Drawing.Size(61, 33);
             this.lbl_Coodination.TabIndex = 3;
             // 
             // HldDisplayViewStatusBar
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.pn_Border);
+            this.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "HldDisplayViewStatusBar";
-            this.Size = new System.Drawing.Size(650, 28);
+            this.Size = new System.Drawing.Size(604, 42);
             this.pn_Border.ResumeLayout(false);
             this.pn_Plus.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pb_Plus)).EndInit();

@@ -21,3 +21,10 @@ C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLD_Vision_Total
 C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLDCommon\obj\Debug\HLDCommon.csprojResolveAssemblyReference.cache
 C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLDCommon\obj\Debug\HLDCommon.dll
 C:\Users\SATEC\Desktop\HLD_Vision_Total_240116\HLD_Vision_Total\HLDCommon\obj\Debug\HLDCommon.pdb
+D:\Github\HLDVision_Draff\HLD_Vision_Total\Output\HLDCommon.dll
+D:\Github\HLDVision_Draff\HLD_Vision_Total\Output\HLDCommon.pdb
+D:\Github\HLDVision_Draff\HLD_VisionOutput\HLDCommon.dll
+D:\Github\HLDVision_Draff\HLD_VisionOutput\HLDCommon.pdb
+D:\Github\HLDVision_Draff\HLDCommon\obj\Debug\HLDCommon.dll
+D:\Github\HLDVision_Draff\HLDCommon\obj\Debug\HLDCommon.pdb
+D:\Github\HLDVision_Draff\HLDCommon\obj\Debug\HLDCommon.csprojResolveAssemblyReference.cache

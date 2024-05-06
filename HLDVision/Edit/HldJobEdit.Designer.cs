@@ -37,6 +37,15 @@
             // tabControl
             // 
             this.tabControl.Controls.Add(this.tp_Tools);
+            this.tabControl.Size = new System.Drawing.Size(450, 441);
+            // 
+            // hldDisplayViewEdit
+            // 
+            this.hldDisplayViewEdit.Size = new System.Drawing.Size(491, 461);
+            // 
+            // lbl_CurrentJob
+            // 
+            this.lbl_CurrentJob.Location = new System.Drawing.Point(791, 0);
             // 
             // tp_Tools
             // 
@@ -44,7 +53,7 @@
             this.tp_Tools.Location = new System.Drawing.Point(4, 22);
             this.tp_Tools.Name = "tp_Tools";
             this.tp_Tools.Padding = new System.Windows.Forms.Padding(3);
-            this.tp_Tools.Size = new System.Drawing.Size(442, 426);
+            this.tp_Tools.Size = new System.Drawing.Size(442, 415);
             this.tp_Tools.TabIndex = 1;
             this.tp_Tools.Text = "Tools";
             this.tp_Tools.UseVisualStyleBackColor = true;
@@ -54,7 +63,7 @@
             this.hldToolBlockTree.Dock = System.Windows.Forms.DockStyle.Fill;
             this.hldToolBlockTree.Location = new System.Drawing.Point(3, 3);
             this.hldToolBlockTree.Name = "hldToolBlockTree";
-            this.hldToolBlockTree.Size = new System.Drawing.Size(436, 420);
+            this.hldToolBlockTree.Size = new System.Drawing.Size(436, 409);
             this.hldToolBlockTree.TabIndex = 0;
             // 
             // HldJobEdit
@@ -62,6 +71,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Name = "HldJobEdit";
+            this.Size = new System.Drawing.Size(941, 507);
             this.tabControl.ResumeLayout(false);
             this.tp_Tools.ResumeLayout(false);
             this.ResumeLayout(false);

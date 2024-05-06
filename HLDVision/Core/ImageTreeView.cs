@@ -16,10 +16,10 @@ namespace HLDVision.Core
             ImageList = new ImageList();
             //ImageList.Images.Add(new Icon(""));
             
-            ImageList.Images.Add("", new Icon(@"C:\Users\SDV\Desktop\icon\1.ico"));
-            ImageList.Images.Add("Input", new Icon(@"C:\Users\SDV\Desktop\icon\2.ico"));
-            ImageList.Images.Add("Output", new Icon(@"C:\Users\SDV\Desktop\icon\3.ico"));
-            ImageList.Images.Add("Acquisition", new Icon(@"C:\Users\SDV\Desktop\icon\4.ico"));
+            //ImageList.Images.Add("", new Icon(@"C:\Users\SDV\Desktop\icon\1.ico"));
+            //ImageList.Images.Add("Input", new Icon(@"C:\Users\SDV\Desktop\icon\2.ico"));
+            //ImageList.Images.Add("Output", new Icon(@"C:\Users\SDV\Desktop\icon\3.ico"));
+            //ImageList.Images.Add("Acquisition", new Icon(@"C:\Users\SDV\Desktop\icon\4.ico"));
         }
     }
 }
